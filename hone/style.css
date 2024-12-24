@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .nav {
+    background-color: rgb(16, 16, 16);
+    color: aliceblue;
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.nav .logo img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    
+
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+}
+.nav .search input {
+    height: 30px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    
+    border: none;
+    background-color: rgb(54, 54, 54);
+    padding-left: 6px;
+    border-radius: 20px;
+
+}
+.nav .search input:focus{
+    outline: none;
+}
+.nav .search  .img2{
+    position: absolute;
+    margin-left: 260px;
+    
+}
+.nav .search a {
+    color: aliceblue;
+
+}
+.nav .search img {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+.nav .search {
+    display:flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.nav .menu {
+    display: flex;
+    gap:20px;
+}
+.nav .menu .login {
+    background-color: aliceblue;
+    color:black;
+    border-radius: 20px;
+    height: 20px;
+    width: 70px;
+    padding-left:10px ;
+}
+.nav .menu .login:hover{
+    height: 22px;
+    width: 70px;
+}
+
+/* homepage */
+
+.main .homepage {
+    display: flex;
+    
+}
+.homepage .right {
+    background-color: rgb(11, 11, 11);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    
+
+    
+
+
+}
+.homepage .right .content {
+    background-color: rgb(33, 32, 32);
+    color: aliceblue;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    height: 90px;
+    padding-left: 10px;
+    
+    
+
+}
+
+.homepage .right {
+    position: fixed;
+
+    height: 100vh;
+}
+
+.homepage .right .content {
+    margin-top: 20px;
+}
+.homepage .right h1 {
+    color: rgb(212, 212, 212);
+    font-size: 2vh;
+    
+}
+.homepage .right .content .createplst h1 {
+    font-size:2vh ;
+}
+.homepage .right .content .createplst p{
+    font-size:1.3vh ;
+    margin-top: 5px;
+}
+
+.homepage .right .content .createplst button {
+    margin-top: 10px;
+    background-color: aliceblue;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.5vh;
+}
+.homepage .right .content h1 {
+    font-size: 2vh;
+}
+.homepage {
+    background-color: rgb(27, 27, 27);
+
+}
+
+.left {
+    margin-left: 100px;
+    text-align: start;
+    margin-top: 70px;
+}
+
+.left h1 {
+    margin-left:20vw ;
+    color: aliceblue;
+    font-size: 2vh;
+}
+.homepage .left {
+    background-color: rgb(27, 27, 27);
+
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* left */
+.homepage .left .popular {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: aliceblue;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+    
+    
+}
+.homepage .left .popular .artist {
+    display: flex;
+    flex-direction: column;
+    margin:30px;
+    text-align: left;
+    font-size: 1.4vh;
+    
+}
+.homepage .left .popular .artist:hover{
+    background-color: rgba(26, 21, 21, 0.393);
+}
+.left .popular .artist h3,p {
+    padding-top: 5px;
+}
+.homepage .left .popular .artist img {
+    border-radius: 50%;
+
+}
+.homepage .left .popular-song .artist {
+    margin: 30px;
+    color: aliceblue;
+    text-align: left;
+    font-size: 1.4vh;
+}
+
+.homepage .left .popular-song {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+
+
+}
+.homepage .left .popular-song .artist img {
+    border-radius: 7px;
+
+}
+
+.homepage .left .popular-radio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20vw;
+
+
+}
+.homepage .left .popular-radio .artist {
+    margin: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.homepage .left .featured-charts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: aliceblue;
+    margin-left: 20vw;
+
+
+}
+.homepage .left .featured-charts .artist {
+    margin: 30px;
+}
+
+.homepage .left .footer {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin:90px;
+    border-bottom:1px solid grey ;
+
+    
+
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+
+}
+.left .footer .company , .community , .links ,.plans  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    
+
+}
